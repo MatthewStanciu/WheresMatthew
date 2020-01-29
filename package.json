@@ -1,0 +1,22 @@
+{
+  "name": "whereami",
+  "version": "1.0.0",
+  "description": "A website that displays the city I'm currently in",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "MatthewStanciu",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.8.1",
+    "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.1",
+    "node-storage": "0.0.9",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

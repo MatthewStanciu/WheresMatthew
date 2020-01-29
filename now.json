@@ -1,0 +1,13 @@
+{
+  "name": "wheresmatthew",
+  "build": {
+    "env": {
+      "AIRTABLE_API_KEY": "@airtable_api_key",
+      "BASE_ID": "@wheres_matthew_base_id"
+    }
+  },
+  "env": {
+    "AIRTABLE_API_KEY": "@airtable_api_key",
+    "BASE_ID": "@wheres_matthew_base_id"
+  }
+}
