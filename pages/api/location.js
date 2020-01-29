@@ -26,8 +26,9 @@ const formatLocation = (location) => {
       newLoc += word + ' '
     })
 
-    console.log(newLoc)
-    resolve(newLoc)
+    newLoc = newLoc.trim()
+    const lastIndex = newLoc.lastIndexOf(' ')
+    resolve(newLoc.substring(0, lastIndex))
   })
 }
 
