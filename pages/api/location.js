@@ -12,9 +12,29 @@ const getLocation = async () => {
   })
 }
 
+const formatLocation = (location) => {
+  return new Promise((resolve, reject) => {
+    var splitLoc = location.split(' ')
+    var thirdToLastWord = splitLoc[splitLoc.length - 3]
+    var indexOfThirdToLastWord = splitLoc.indexOf(thirdToLastWord)
+    splitLoc[indexOfThirdToLastWord] = thirdToLastWord + ','
+    console.log(splitLoc)
+
+    var newLoc = ''
+
+    splitLoc.forEach(word => {
+      newLoc += word + ' '
+    })
+
+    console.log(newLoc)
+    resolve(newLoc)
+  })
+}
+
 export default async (req, res) => {
   const location = await getLocation()
+  const formattedLocation = await formatLocation(location)
   res.json({
-    location: location
+    location: formattedLocation
   })
 }
