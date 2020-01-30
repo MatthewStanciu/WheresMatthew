@@ -1,5 +1,3 @@
-const Storage = require('node-storage')
-const store = new Storage('location.json')
 const Airtable = require('airtable')
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.BASE_ID)
 
